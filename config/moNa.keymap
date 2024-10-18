@@ -73,7 +73,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -85,7 +85,7 @@
 &trans                                                   &to 3     &trans    &trans  &trans          &kp RA(PSCRN)  &trans        &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_2 {
