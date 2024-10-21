@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define MOUSE 6
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
@@ -59,6 +60,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -72,9 +80,7 @@
 &kp SCROLLLOCK                       &lt 2 SPACE  &mt LEFT_SHIFT ESC    &mt RCTRL BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT DELETE  &none      &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
