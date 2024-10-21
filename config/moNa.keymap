@@ -70,6 +70,13 @@
 
             tap-ms = <20>;
         };
+
+        tb_scroll: trackball_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "TRACKBALL_SCROLL";
+            #sensor-binding-cells = <2>;
+            bindings = <&scroll_vertical>, <&scroll_horizontal>;
+        };
     };
 
     keymap {
@@ -126,6 +133,8 @@
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans                                &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&tb_scroll SCROLL_UP SCROLL_DOWN>; // スクロールモード時のトラックボール動作
         };
 
         layer_5 {
