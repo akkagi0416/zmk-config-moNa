@@ -134,7 +134,7 @@
 &trans                                &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&tb_scroll SCROLL_UP SCROLL_DOWN>; // スクロールモード時のトラックボール動作
+            // sensor-bindings = <&tb_scroll SCROLL_UP SCROLL_DOWN>; // スクロールモード時のトラックボール動作
         };
 
         layer_5 {
