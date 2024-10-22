@@ -142,7 +142,7 @@
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                                &trans    &trans    &trans  &mo 1   &trans  &trans  &trans  &trans
+&trans                                &trans    &trans    &trans  &mo 1   &trans  &kp A   &trans  &trans
             >;
         };
     };
