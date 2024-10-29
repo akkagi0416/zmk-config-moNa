@@ -78,8 +78,8 @@
         default_layer {
             bindings = <
 &kp Q        &kp W  &kp E  &kp R  &kp T                                                   &kp Y        &kp U                 &kp I      &kp O       &kp P
-&kp A        &kp S  &kp D  &kp F  &kp G        &kp C_AC_ZOOM_IN                           &kp H        &kp J                 &kp K      &kp L       &mt RIGHT_GUI SEMI
-&mt LCTRL Z  &kp X  &kp C  &kp V  &kp B        &kp C_AC_ZOOM_OUT     &kp C_AL_FILES       &kp N        &kp M                 &kp COMMA  &kp PERIOD  &kp SLASH
+&kp A        &kp S  &kp D  &kp F  &kp G        &none                                      &kp H        &kp J                 &kp K      &kp L       &mt RIGHT_GUI SEMI
+&mt LCTRL Z  &kp X  &kp C  &kp V  &kp B        &none                 &none                &kp N        &kp M                 &kp COMMA  &kp PERIOD  &kp SLASH
 &tog 4                            &lt 2 SPACE  &mt LEFT_SHIFT ESC    &mt RCTRL BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT DELETE  &mo 4      &mo 5       &mo 6
             >;
 
@@ -89,7 +89,7 @@
         layer_1 {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                      &kp NUMBER_6    &kp N7         &kp N8        &kp N9           &kp N0
-&kp TAB       &trans        &trans        &kp LC(SPACE)  &trans    &trans            &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_WIN
+&kp TAB       &trans        &trans        &kp LC(SPACE)  &trans    &trans            &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_GUI
 &kp LCTRL     &mkp MB3      &mkp MB2      &mkp MB1       &mkp MB4  &trans    &trans  &trans          &kp END        &kp HOME      &trans           &trans
 &trans                                                   &to 3     &trans    &trans  &trans          &kp RA(PSCRN)  &trans        &trans           &trans
             >;
@@ -104,6 +104,8 @@
 &kp LCTRL        &mkp MB3        &mkp MB2          &mkp MB1    &mkp MB4     &trans           &trans  &kp GRAVE  &kp SINGLE_QUOTE       &kp DOUBLE_QUOTES  &kp TILDE        &kp BACKSLASH
 &trans                                                         &trans       &kp LA(PSCRN)    &trans  &to 3      &trans                 &trans             &trans           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         layer_3 {
@@ -122,7 +124,7 @@
         layer_4 {
             bindings = <
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans                                &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -130,19 +132,19 @@
 
         layer_5 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans                 &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans                                            &trans  &trans    &trans       &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans                          &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans   &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans            &trans  &trans  &trans  &trans   &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp A   &lt 1 B  &to 1
+&trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp A   &trans  &trans
             >;
         };
     };
