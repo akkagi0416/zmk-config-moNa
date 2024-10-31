@@ -80,7 +80,7 @@
 &kp Q        &kp W  &kp E  &kp R  &kp T                                                   &kp Y        &kp U                 &kp I      &kp O       &kp P
 &kp A        &kp S  &kp D  &kp F  &kp G        &none                                      &kp H        &kp J                 &kp K      &kp L       &mt RIGHT_GUI SEMI
 &mt LCTRL Z  &kp X  &kp C  &kp V  &kp B        &none                 &none                &kp N        &kp M                 &kp COMMA  &kp PERIOD  &kp SLASH
-&tog 4                            &lt 2 SPACE  &mt LEFT_SHIFT ESC    &mt RCTRL BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT DELETE  &mo 4      &mo 5       &mo 6
+&tog 6                            &lt 2 SPACE  &mt LEFT_SHIFT ESC    &mt RCTRL BACKSPACE  &lt 1 ENTER  &mt RIGHT_ALT DELETE  &mo 4      &mo 5       &mo 6
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -126,7 +126,7 @@
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                                &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 6                                &trans    &trans    &trans  &mo 1   &trans  &kp A   &trans  &trans
             >;
         };
 
@@ -144,7 +144,7 @@
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp A   &trans  &trans
+&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp B   &trans  &trans
             >;
         };
     };
