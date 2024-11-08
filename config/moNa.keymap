@@ -91,7 +91,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                      &kp NUMBER_6    &kp N7         &kp N8        &kp N9           &kp N0
 &kp TAB       &trans        &trans        &kp LC(SPACE)  &trans    &trans            &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_GUI
 &kp LCTRL     &mkp MB3      &mkp MB2      &mkp MB1       &mkp MB4  &trans    &trans  &trans          &kp END        &kp HOME      &trans           &trans
-&trans                                                   &to 3     &trans    &trans  &trans          &kp RA(PSCRN)  &trans        &to 1            &sys_reset
+&trans                                                   &to 3     &trans    &trans  &trans          &kp RA(PSCRN)  &trans        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -110,10 +110,10 @@
 
         layer_3 {
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5                                  &kp F6  &kp F7           &kp F8  &kp F9  &kp F10
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL            &trans  &trans           &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans           &trans  &trans  &trans
-&trans                                            &trans        &trans            &trans  &trans  &kp RA(RC(DEL))  &trans  &trans  &trans
+&kp F1  &kp F2        &kp F3        &kp F4        &kp F5                                      &kp F6  &kp F7           &kp F8  &kp F9  &kp F10
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                &trans  &trans           &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &sys_reset        &sys_reset  &trans  &trans           &trans  &trans  &trans
+&trans                                            &trans        &trans            &trans      &trans  &kp RA(RC(DEL))  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -144,7 +144,7 @@
 &trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans    &trans    &trans    &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp B   &to 1   &trans
+&tog 4                                &trans    &trans    &trans  &mo 1   &trans  &kp B   &trans  &trans
             >;
         };
     };
