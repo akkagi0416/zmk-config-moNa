@@ -40,6 +40,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        page_up {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <17 18>;
+        };
+
+        page_down {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
