@@ -42,12 +42,12 @@
         };
 
         page_up {
-            bindings = <&kp PAGE_UP>;
+            bindings = <&kp PAGE_DOWN>;
             key-positions = <17 18>;
         };
 
         page_down {
-            bindings = <&kp PAGE_DOWN>;
+            bindings = <&kp PAGE_UP>;
             key-positions = <18 19>;
         };
     };
