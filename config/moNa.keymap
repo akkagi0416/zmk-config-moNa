@@ -98,10 +98,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &mkp MB4  &trans    &trans            &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&tog 2                                &trans    &trans    &trans  &mo 2   &trans  &kp A   &trans  &trans
+&trans  &trans    &trans    &trans    &trans                      &trans       &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &mkp MB4  &trans    &trans            &trans       &trans  &trans  &trans  &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &mkp MB4  &trans    &trans  &trans       &trans  &trans  &trans  &trans
+&tog 2                                &trans    &trans    &trans  &lt 2 ENTER  &trans  &kp A   &trans  &trans
             >;
         };
 
