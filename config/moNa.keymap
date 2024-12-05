@@ -51,7 +51,7 @@
             key-positions = <18 19>;
         };
 
-        MB4 {
+        mb4 {
             bindings = <&mkp MB4>;
             key-positions = <23 24>;
         };
